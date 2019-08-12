@@ -1,14 +1,16 @@
 ### Install: 
 ```bash
-git clone "https://github.com/KalleHallden/ProjectInitializationAutomation.git"
-cd ProjectInitializationAutomation
-pip install -r requirements.txt
+git clone "https://github.com/levicrews/auto-init.git"
+cd auto-init
+pip3 install -U -r requirements.txt
 source ~/.my_commands.sh
-Then go to create.py and set the username and password to be your username and password.
-Also make sure to change all directories to your directories so it should be '/Users/<your username>/path/to/your/project'
 ```
+In `create-project.py` and `create-notebook.py`, set the username and password to match yours.
+Change all directories to `~/path/to/your/project`.
+
 
 ### Usage:
+In the terminal, enter
 ```bash
-To run the script type in 'create <name of your folder>'
+project <name of your folder>
 ```
