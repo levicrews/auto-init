@@ -1,5 +1,8 @@
 ### Install: 
 ```bash
+cd /home/levicrews
+git clone "https://github.com/levicrews/template-project.git"
+git clone "https://github.com/levicrews/template-notebook.git"
 git clone "https://github.com/levicrews/auto-init.git"
 cd auto-init
 pip3 install -U -r requirements.txt
