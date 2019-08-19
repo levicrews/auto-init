@@ -2,7 +2,7 @@ import sys
 import os
 from github import Github
 
-path = "/mnt/c/Users/levic/Documents/"
+path = "/home/levicrews"
 
 username = "" #Insert your github username here
 password = "" #Insert your github password here
