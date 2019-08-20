@@ -4,19 +4,21 @@ Read through [GitHub's official doc](https://help.github.com/en/articles/about-s
 If you prefer to use the HTTPS protocal, simply change all URLs accordingly.
 For a helpful comparison between SSH and HTTPS, see [this gist](https://gist.github.com/grawity/4392747).
 
-### Install: 
+### Install:
 ```bash
 cd ~
 git clone "git@github.com:levicrews/template-project.git"
 git clone "git@github.com:levicrews/template-notebook.git"
 git clone "git@github.com:levicrews/auto-init.git"
-cd auto-init
-pip3 install -U -r requirements.txt
-source ~/auto-init/.auto_init_commands.sh
+pip3 install -U -r auto-init/requirements.txt
+cp auto-init/.auto_init_commands.sh .auto_init_commands.sh
+cp auto-init/create_project.py create_project.py
+cp auto-init/create_notebook.py create notebook.py
+source .auto_init_commands.sh
 ```
 In `create_project.py` and `create_notebook.py`, set the username and password to match yours.
-Change all directories to `~/path/to/your/project`.
-
+Everything will be installed into your home directory by default.
+Change filepaths as needed.
 
 ### Usage:
 To initialize a research project, enter
