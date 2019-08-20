@@ -6,7 +6,7 @@ For a helpful comparison between SSH and HTTPS, see [this gist](https://gist.git
 
 ### Install: 
 ```bash
-cd /home/levicrews
+cd ~
 git clone "git@github.com:levicrews/template-project.git"
 git clone "git@github.com:levicrews/template-notebook.git"
 git clone "git@github.com:levicrews/auto-init.git"
