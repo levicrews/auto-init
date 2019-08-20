@@ -12,7 +12,7 @@ git clone "git@github.com:levicrews/template-notebook.git"
 git clone "git@github.com:levicrews/auto-init.git"
 cd auto-init
 pip3 install -U -r requirements.txt
-source ~/.auto_init_commands.sh
+source ~/auto-init/.auto_init_commands.sh
 ```
 In `create_project.py` and `create_notebook.py`, set the username and password to match yours.
 Change all directories to `~/path/to/your/project`.
