@@ -2,7 +2,7 @@
 
 function project() {
     cd /home/levicrews
-    cp -a /home/levicrewstemplate-project $1
+    cp -a /home/levicrews/template-project $1
     rm -rf $1/.git
     python3 create_project.py $1
     cd /home/levicrews/$1
