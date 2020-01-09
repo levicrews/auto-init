@@ -7,18 +7,25 @@ For a helpful comparison between SSH and HTTPS, see [this gist](https://gist.git
 ### Install:
 ```bash
 cd ~
-git clone "git@github.com:levicrews/template-project.git"
-git clone "git@github.com:levicrews/template-notebook.git"
-git clone "git@github.com:levicrews/auto-init.git"
-pip3 install -U -r auto-init/requirements.txt
-cp auto-init/.auto_init_commands.sh .auto_init_commands.sh
-cp auto-init/create_project.py create_project.py
-cp auto-init/create_notebook.py create notebook.py
-source .auto_init_commands.sh
+git clone "git@github.com:levicrews/template-project.git" template-project
+git clone "git@github.com:levicrews/template-notebook.git" template-notebook
+git clone "git@github.com:levicrews/auto-init.git" auto-init
+pip install -U -r auto-init/requirements.txt
+touch .env
 ```
-In `create_project.py` and `create_notebook.py`, set the username and password to match yours.
-Everything will be installed into your home directory by default.
-Change filepaths as needed.
+
+Add the following to your `.bashrc` file:
+``` bash
+source ~/auto-init/.auto_init_commands.sh
+```
+Add the following to your `.env` file:
+
+``` bash
+USERNAME="<your username>"
+PASSWORD="<your password>"
+FILEPATH="<your/file/path/>"
+```
+Don't forget the final slash in your `FILEPATH`!
 
 ### Usage:
 To initialize a research project, enter

@@ -1,14 +1,15 @@
 import sys
 from github import Github
+from dotenv import load_dotenv
 
-username = "" #Insert your github username here
-password = "" #Insert your github password here
+load_dotenv()
+username = os.getenv("USERNAME")
+password = os.getenv("PASSWORD")
 
-def create_project():
-    folderName = str(sys.argv[1])
+def create():
     user = Github(username, password).get_user()
     repo = user.create_repo(sys.argv[1])
     print("Succesfully created repository {}".format(sys.argv[1]))
 
 if __name__ == "__main__":
-    create_project()
+    create()
