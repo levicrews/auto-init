@@ -23,9 +23,8 @@ Add the following to your `.env` file:
 ``` bash
 USERNAME="<your username>"
 PASSWORD="<your password>"
-FILEPATH="<your/file/path/>"
+FILEPATH="</your/file/path>"
 ```
-Don't forget the final slash in your `FILEPATH`!
 
 ### Usage:
 To initialize a research project, enter
