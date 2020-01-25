@@ -1,5 +1,13 @@
 #!/bin/bash
 
+function testauto() {
+    cd ~
+    source .env
+    cp -a template-notebook $FILEPATH/$1
+    rm -rf $FILEPATH/$1/.git
+    cd $FILEPATH/$1
+}
+
 function project() {
     cd ~
     source .env

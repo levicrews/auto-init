@@ -37,3 +37,10 @@ To initialize a notebook or non-research project, enter
 notebook <name of your folder>
 ```
 in the terminal.
+I recommend that you start by running
+
+``` bash
+testauto <name of test folder>
+```
+to ensure that your `FILEPATH` is set correctly.
+
